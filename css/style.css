@@ -107,6 +107,7 @@ ul {
 .nav-list {
   display: flex;
   margin-left: 93px;
+  /* justify-content: center; */
 }
 
 .nav-list .nav-item + .nav-item {
@@ -115,6 +116,7 @@ ul {
 
 .list-contact {
   display: flex;
+  justify-content: center;
   align-items: center;
   list-style: none;
   margin-left: auto;
