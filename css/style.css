@@ -12,7 +12,9 @@
   --secondary-button-color: rgba(255, 255, 255, 0.6);
   --primary-background-button: #f5f4fa;
   --secondary-background-button: #188ce8;
-  --accent-color: #2196f3;
+  --accent-color: rgba(33, 150, 243, 1);
+  --logo-color: #2196f3;
+  --icon-color: rgba(175, 177, 184, 1);
 }
 
 *,
@@ -101,13 +103,14 @@ ul {
 }
 
 .logo {
-  color: var(--accent-color);
+  color: var(--logo-color);
 }
 
 .nav-list {
   display: flex;
   margin-left: 93px;
-  /* justify-content: center; */
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-list .nav-item + .nav-item {
@@ -129,8 +132,12 @@ ul {
 .nav-link,
 .contact-link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  /* padding-top: 32px; */
+  /* padding-bottom: 32px; */
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -139,14 +146,17 @@ ul {
 }
 
 .contact-link {
-  display: inline-block;
-  align-items: center;
+  display: flex;
+  align-items: baseline;
+
   color: var(--link-color);
 }
 
 .contact-icon {
   margin-right: 10px;
   fill: currentColor;
+  align-self: start;
+  color: var(--link-color);
 }
 
 .nav-link:hover,
@@ -166,7 +176,6 @@ ul {
 
 /* -----------Hero------------ */
 .hero {
-  background-image: url("../images/hero.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(
@@ -373,7 +382,7 @@ ul {
 }
 
 .team-social-icon {
-  fill: var(--link-color);
+  fill: var(--icon-color);
 }
 
 .team-social-item + .team-social-item {
@@ -632,7 +641,6 @@ address {
 .project-item {
   width: 370px;
   margin: 15px;
-  border: 1px solid #eeeeee;
 }
 
 .project-title {
