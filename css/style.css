@@ -171,7 +171,7 @@ ul {
 
 .contact-link:hover .contact-icon,
 .contact-link:focus .contact-icon {
-  fill: currentColor;
+  fill: var(--accent-color);
 }
 
 /* -----------Hero------------ */
